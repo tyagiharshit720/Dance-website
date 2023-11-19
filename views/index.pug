@@ -1,0 +1,60 @@
+
+doctype html
+html
+  head
+    title Harshit  Dance Academy
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+        ul
+            div#logo
+                img(src="/static/img/logo.jpg")
+                | HDA
+            li #[a(href="/") Home]
+            li #[a(href="/") About]
+            li #[a(href="/") Services]
+            li #[a(href="/") Class Info]
+            li #[a(href="/") Contact Us]
+    
+    section#introSection
+        div Welcome to Harshit's Dance Academy
+        div.small Eat Sleep Dance Repeat
+
+    section#missionSection
+        h2 Our Mission
+        div.card
+            h3 Dance is life's poetry
+            div.card-box
+                div.card-img
+                    img(src="/static/img/d1.png")
+                div.card-content
+                    p "Life is a dance, and the stage is your canvas."
+        div.card
+            h3 Mission in Motion
+            div.card-box
+                div.card-img
+                    img(src="/static/img/d2.png")
+                div.card-content
+                    p "Dance is a conversation between body and soul."
+        div.card
+            h3 Our Dance Mission
+            div.card-box
+                div.card-img
+                    img(src="/static/img/d3.png")
+                div.card-content
+                    p "Dance is the hidden language of the soul."
+
+
+    section#sponsorsSection
+        h2 Our Sponsors
+        div#sponsors 
+        img(src="/static/img/fb.png", alt="Sponsor Image", class="spImage")
+        img(src="/static/img/tik.png", alt="Sponsor Image", class="spImage")
+        img(src="/static/img/wp.png", alt="Sponsor Image", class="spImage")
+        img(src="/static/img/yt.png", alt="Sponsor Image", class="spImage")
+    
+    footer#footer
+        | copyright © 2023 HarshitDanceAcademy.com   |    All rights are reserved 
+    script
+      include ../static/index.js
